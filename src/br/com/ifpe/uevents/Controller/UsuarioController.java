@@ -147,10 +147,12 @@ public class UsuarioController {
 		@RequestMapping("/gerarAta")
 	    public String gerarAta(Atividade atv, Model model) throws IOException, DocumentException {	
 			String nomeAtv = new AtividadeDao().buscarPorId(atv).getNome();
-			HtmlToPdf.createPdf(Util.geraSalt()+"ata_da_atv_"+nomeAtv, atv);
+			String nomeArquivo =Util.geraSalt()+"ata_da_atv_"+nomeAtv+".pdf";
+			HtmlToPdf.createPdf(nomeArquivo, atv);
 			
+			model.addAttribute("arquivo", nomeArquivo);
 			model.addAttribute("msg", "Ata gerada com sucesso");
-			return "forward:paginaInicial";
+			return "telas/teste";
 	    }
 		
 		 @RequestMapping("/logout")
@@ -158,5 +160,7 @@ public class UsuarioController {
 		    session.invalidate();
 		    return "telas/index";
 		 }
+		 
+		 
 
 }

@@ -45,7 +45,7 @@ public class HtmlToPdf {
 		
         Document document = new Document();
 
-        PdfWriter.getInstance(document, new FileOutputStream("C:/Users/Edmarcos/git/UEVENTS1/WebContent/view/pdf/"+dest));
+        PdfWriter.getInstance(document, new FileOutputStream("/home/aluno/git/UEVENTs/WebContent/view/pdf/"+dest));
 
         document.open();
 

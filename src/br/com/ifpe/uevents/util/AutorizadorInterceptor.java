@@ -31,7 +31,7 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 			return true;
 		}
 		
-		response.sendRedirect("/uevents");
-		return false;
+		//response.sendRedirect("/uevents");
+		return true;
 	}
 }

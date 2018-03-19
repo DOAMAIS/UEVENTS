@@ -121,7 +121,7 @@
                                                         <td>${atividade.nome}</td>
                                                         <td><fmt:formatDate value="${atividade.data}" pattern="dd/MM/yyyy"/></td>
                                                         <td>${atividade.horaInicio}</td>
-                                                        <td><a href=""><button class="btn btn-info">Gerar ata</button></a>
+                                                        <td><a href="gerarAta?id=${atividade.id}"><button class="btn btn-info">Gerar ata</button></a>
                                                         <td><a href="alterarAtividade?id=${atividade.id}"><button class="btn btn-warning "> <span class="glyphicon glyphicon-pencil"></span></button></a>
                                                         <td><a href="removerAtividade?id=${atividade.id}"><button class="btn btn-danger"> <span class="glyphicon glyphicon-remove"></span></button></a>
                                                     </tr>
