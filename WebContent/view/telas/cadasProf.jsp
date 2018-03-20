@@ -13,7 +13,7 @@
 <c:import url="/view/linkcss.jsp" />
 </head>
 <body>
-<c:import url="../comum/navbarCadas.jsp" />
+<c:import url="../comum/navbarCadProf.jsp" />
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-20 p-b-20">
