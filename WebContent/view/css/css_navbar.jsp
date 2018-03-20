@@ -1,20 +1,10 @@
 <style>
-/* required for navbar-fixed-top */
-
-
-/* Correct left margin */
-.navbar-header{ 
-    padding-left: 3px;
-    
-     }
 .navbar {
     background-color: #5cb85c;
-    height:10px;
+    height:40px;
    
    
 }
-ul.nav.navbar-nav.navbar-right{
-    color: transparent;
-     heigt:10px;
-}
+
+
 </style>
